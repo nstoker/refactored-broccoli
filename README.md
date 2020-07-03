@@ -1,8 +1,12 @@
 # Jeopardy
 
-The task is to create a page where 10 random questions were asked, answers captured and then a total score at the end based on the money column of the data.
+The task is to create a page where 10 random questions are asked, answers captured and then a total score at the end based on the money column of the data.
 
 Jeopardy is powered by [Sinatra](http://sinatrarb.com/)
+
+# Submission
+
+Once completed, please zip your finished work folder in its entirety and email it to your contact at clixifix®.
 
 # Supplimentary Ruby Docs
   - Sinatra documentation (server side) http://sinatrarb.com/intro.html
