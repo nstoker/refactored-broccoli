@@ -8,6 +8,7 @@ Jeopardy is powered by [Sinatra](http://sinatrarb.com/)
   - Sinatra documentation (server side) http://sinatrarb.com/intro.html
   - Ruby Docs
   -- https://www.ruby-lang.org/en/documentation/
+
   -- CSV specific: https://docs.ruby-lang.org/en/2.6.0/CSV.html
 
 
