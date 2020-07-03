@@ -1,4 +1,4 @@
-# This include the installed gem, Sinatra is a basic web serving framework
+# This includes the installed gem, Sinatra is a basic web serving framework
 # Please look at the documentation to find out what you can do to fufill the task http://sinatrarb.com/intro.html
 #
 # Sinatra WebServer does not do "hotreloading" you will need to restart your webserver after modifying any files for them to take effect.
