@@ -1,0 +1,34 @@
+<!--
+  this is a ERB tag, Ruby's equivilant to mushtash
+{{ }}
+<%=  %> # will ebvaluate produces output the result
+<% %> # no output but will evaluvate
+<#% %> # comment out ERB tag which will not evaluate
+
+-->
+
+<!--
+  Add javascript if you're more comfortable with that and use JSON endpoints to get the data you need.
+  This starter file shows how you can server side render Ruby into HTML for WEB 2.0 style applications
+-->
+<html>
+  <head>
+  </head>
+  <body>
+    <table>
+      <% @csv.each.with_index do |row,index| %>
+        <tr>
+          <% if index == 0 %>
+            <% row.each do |column| %>
+              <th><%= column %></th>
+            <% end %>
+          <% else %>
+            <% row.each do |column| %>
+              <td><%= column %></td>
+            <% end %>
+          <% end %>
+        </tr>
+      <% end %>
+    </table>
+  </body>
+</html>
