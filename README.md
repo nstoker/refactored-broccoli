@@ -18,10 +18,10 @@ Once completed, please zip your finished work folder in its entirety and email i
 
 # Installation
 
-Jeopardy requires Ruby 2.6.6 to run, I'd recommend running the folowing if you don't have it installed:
+Jeopardy requires Ruby 2.6.6 to run, I'd recommend running the following if you don't have it installed:
 
 ##### RVM + Ruby prerequisites
-Install [RVM](https://rvm.io/rvm/install) then install Ruby 2.6.6, we will something similar for the clixifix application.
+Install [RVM](https://rvm.io/rvm/install) then install Ruby 2.6.6, we will do something similar for the clixifix application.
 ```
 gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 \curl -sSL https://get.rvm.io | bash -s stable
