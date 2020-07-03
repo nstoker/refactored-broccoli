@@ -16,7 +16,7 @@ Once completed, please zip your finished work folder in its entirety and email i
   -- CSV specific: https://docs.ruby-lang.org/en/2.6.0/CSV.html
 
 
-### Installation
+# Installation
 
 Jeopardy requires Ruby 2.6.6 to run, I'd recommend running the folowing if you don't have it installed:
 
