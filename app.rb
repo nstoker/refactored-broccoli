@@ -5,12 +5,38 @@
 require 'sinatra'
 require_relative './lib/csv_parser.rb' # relative to this file
 
+NUM_QUESTIONS=10.freeze # Remember the Jabberwocky aka off-by-one errors, my son.
+
 get '/' do
   # this instance variable will be available in your view
-  @csv = CsvParser.csv
+  @csv = CsvParser.csv.shuffle[1..NUM_QUESTIONS]
 
   # server side renders ./views/index.erb then serves it to the browser
   erb :index
+end
+
+get '/answers' do
+  # content_type :json
+  ua = params["ua"]
+  aa = params["aa"]
+  va = params["va"]
+  score=0
+
+  for i in 0..NUM_QUESTIONS do
+    answer=ua["#{i}"]
+    next unless answer
+
+    actual=aa["#{i}"]
+    # Some values have a comma as a separator. This looses that. We also don't want to try to parse the $
+    value=va["#{i}"][1..].gsub(",","").to_i
+    logger.info "Q##{i} you said '#{answer}', the answer was '#{actual}', and was worth $#{value}"
+
+    score += value if answer.downcase==actual.downcase
+  end
+
+  @score=score
+
+  erb :answers
 end
 
 # Example json endpoint to get csv in json format

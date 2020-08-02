@@ -21,6 +21,8 @@ Jeopardy requires Ruby 2.6.6 to run, I'd recommend running the following if you 
 
 ### RVM + Ruby prerequisites
 
+Note I have Ruby 2.7.0 installed, ymmv.
+
 Install [RVM](https://rvm.io/rvm/install) then install Ruby 2.6.6, we will do something similar for the clixifix application.
 
 ```bash
